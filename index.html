@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorStack @ SMC - Santa Monica College Chapter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-card">
+            <!-- Header Section -->
+            <div class="header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="stack-lines">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <span class="logo-text">SMC</span>
+                </div>
+                <div class="title-section">
+                    <h1 class="club-name">ColorStack @ SMC</h1>
+                    <p class="chapter-name">Santa Monica College Chapter</p>
+                </div>
+            </div>
+
+            <!-- Mission Section -->
+            <div class="mission-section">
+                <h2 class="section-title">Our Mission</h2>
+                <p class="mission-text">
+                    A SMC chapter for ColorStack, a non-profit organization that builds a supportive and empowering space for Black and Latinx students in tech. We aim to connect, grow, and access career-building opportunities like internships, mentorship, and workshops.
+                </p>
+            </div>
+
+            <!-- Join Section -->
+            <div class="join-section">
+                <h3 class="join-title">Interested in joining?</h3>
+                <p class="join-description">Click join now to get started and become a member!</p>
+                <button class="join-button" onclick="handleJoin()">
+                    Join Now
+                </button>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="social-section">
+                <p class="social-text">Follow us to stay updated on events & opportunities!</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" onclick="handleSocial('discord')">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mussie_yon/" class="social-icon" onclick="handleSocial('instagram')">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" onclick="handleSocial('linkedin')">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p class="copyright">© 2024 ColorStack @ Santa Monica College. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Join Modal -->
+    <div id="joinModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Join ColorStack @ SMC</h2>
+            <form id="joinForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="major">Major</label>
+                    <input type="text" id="major" name="major" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year Level</label>
+                    <select id="year" name="year" required>
+                        <option value="">Select Year</option>
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                        <option value="transfer">Transfer Student</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Areas of Interest</label>
+                    <textarea id="interests" name="interests" rows="3" placeholder="What areas of tech interest you? (e.g., web development, data science, AI, etc.)"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Have you joined our Discord?</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="discord" value="yes" required>
+                            <span class="radio-custom"></span>
+                            Yes
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="discord" value="no" required>
+                            <span class="radio-custom"></span>
+                            No
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
