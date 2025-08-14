@@ -70,7 +70,7 @@ joinForm.addEventListener('submit', function(e) {
 function handleSocial(platform) {
     const urls = {
         discord: 'https://discord.gg/colorstack-smc',
-        instagram: 'https://www.instagram.com/colorstack_smc/',
+        instagram: 'https://www.instagram.com/mussie_yon/',
         linkedin: 'https://www.linkedin.com/company/colorstack-smc/'
     };
     
