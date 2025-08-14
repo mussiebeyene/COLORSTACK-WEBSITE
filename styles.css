@@ -65,7 +65,7 @@ body {
 .logo-image {
     width: 100px;
     height: 100px;
-    border-radius: 12px;
+    border-radius: 50%;
     object-fit: cover;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -414,6 +414,7 @@ body {
     .logo-image {
         width: 80px;
         height: 80px;
+        border-radius: 50%;
     }
     
     .social-icons {
@@ -468,6 +469,7 @@ body {
     .logo-image {
         width: 70px;
         height: 70px;
+        border-radius: 50%;
     }
 }
 
