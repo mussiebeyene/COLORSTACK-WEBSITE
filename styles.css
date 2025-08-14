@@ -63,11 +63,12 @@ body {
 }
 
 .logo-image {
-    width: 70px;
-    height: 70px;
-    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
     object-fit: cover;
     border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .logo-text {
@@ -410,6 +411,11 @@ body {
         gap: 10px;
     }
     
+    .logo-image {
+        width: 80px;
+        height: 80px;
+    }
+    
     .social-icons {
         gap: 15px;
     }
@@ -457,6 +463,11 @@ body {
     .radio-group {
         flex-direction: column;
         gap: 10px;
+    }
+    
+    .logo-image {
+        width: 70px;
+        height: 70px;
     }
 }
 
